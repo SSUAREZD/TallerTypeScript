@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "outDir": "./scripts", // Output directory for compiled files
+    "rootDir": "./", // Root directory for TypeScript files
+    "target": "es5", // Target ECMAScript 5 for compatibility
+    "module": "es6", // Use ES modules
+    "strict": true
+  },
+  "include": ["./**/*.ts"], // Include all TypeScript files in the project
+  "exclude": ["node_modules"] // Exclude dependencies
+}
