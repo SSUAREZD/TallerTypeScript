@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1</title>
+    <style>
+        header {
+            background-color: #4CAF50; 
+            color: white;
+            text-align: left;
+            padding: 1rem;
+            font-size: 1.5rem;
+            font-family: Arial, sans-serif;
+        }
+        .row {
+            margin: 1rem 0;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .thead-dark th {
+            background-color: #343a40;
+            color: white;
+        }
+        .justify-content-end {
+            display: flex;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Series
+    </header>
+    <div class="row">
+        <div class="col-4">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Channel</th>
+                        <th>Season</th>
+                    </tr>
+                </thead>
+                <tbody id="series"></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row justify-content-end">
+        <h5 class="col-4" id="avg-seasons"><strong>Promedio Temporadas: </strong></h5>
+    </div>
+    <script type="module" src="./scripts/Serie.js"></script>
+    <script type="module" src="./scripts/data.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
